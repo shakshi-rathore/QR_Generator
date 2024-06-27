@@ -1,0 +1,141 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background:linear-gradient(45deg,black,rgb(46, 1, 46));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+   
+}
+section{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+.container{
+    
+    border:none;
+    display: flex;
+   
+   max-width: 800px;
+   margin: 150px auto;
+   
+}
+.name{
+    color: white;
+    font-size: 2em;
+    padding: 0.5em;
+}
+.box{
+    background-color: white;
+    margin: 20px;
+    padding: 25px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 7px 7px 12px rgb(114, 75, 117);
+    width:50%;
+}
+.box p{
+   font-size: 1em;
+}
+.box input{
+    border:1px solid rgb(146, 7, 151);
+    padding: 5px;
+    
+    width:90%;
+    margin:5px 0px;
+}
+.box input:focus{
+    outline: none;
+    border:2px solid rgb(161, 38, 165);
+}
+.cancel{
+    width:10%;
+    padding: 7px ;
+    background-color: rgb(89, 3, 92);
+    border:none;
+    cursor: pointer;
+    
+    color: white;
+    margin:0;
+}
+.gen{
+    width:100%;
+    padding: 8px ;
+    background-color: rgb(89, 3, 92);
+    border:none;
+    cursor: pointer;
+    border-radius: 5px;
+    color: white;
+    margin:5px 0px;
+}
+@media screen and (max-width:560px) {
+    .name{
+        font-size: 1.7em;
+    }
+}
+@media screen and (max-width:480px)
+{
+    .container{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 90%;
+        margin: 0px auto;
+    }
+    .box{
+        width:90%;
+        margin:10px;
+    }
+    .name{
+        margin: 0px;
+        padding: -1em;
+    }
+}
+.img{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    
+    align-items: center;
+    margin: 10px auto;
+}
+/* #QRimg{
+    height:200px;
+     width:200px;
+} */
+.none{
+    display: none;
+}
+.loading{
+    height: 200px;;
+    width:200px;
+}
+.empty{
+    animation: shake 0.1s linear 7;
+}
+@keyframes shake {
+    0%{
+        transform: translateX(0);
+        transform: translateY(0);
+    }
+    25%{
+        transform: translateY(-2px);
+        transform: translateX(-2px);
+    }
+    50%{
+        transform: translateY(0);
+        transform: translateX(0);
+    }
+    75%{
+        transform: translateY(2px);
+        transform: translateX(2px);
+    }
+    100%{
+        transform: translateY(0);
+        transform: translateX(0);
+    }
+
+}
